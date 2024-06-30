@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="player.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" id="card">
+        <div class="img-holder">
+            <img src="nós.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>Audio de Isaque</h2>
+            <p>Para minha princesa Juliana, este áudio é um pequeno reflexo do quanto você é especial para mim. É uma declaração do meu amor, da minha gratidão por ter você na minha vida e da felicidade que sinto por cada momento ao seu lado. Eu te amo além das palavras!"</p>
+        </div>
+        <div class="play-icon" id="play-icon">
+            <div class="circle">
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div id="audio-controls">
+            <div id="audio-time">0:00</div> 
+            <input type="range" id="progress-bar" min="0" value="30">
+        </div>
+    </div>
+
+    <audio id="audio">
+        <source src="audio.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <script src="spotify.js"></script>
+</body>
+</html>
